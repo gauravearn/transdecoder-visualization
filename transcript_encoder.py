@@ -49,7 +49,7 @@ start_end_strand_tu = tuple(start_end_strand)
 with open("save_coordinates_visualization.txt", "w") as write_gff:
     write_gff.write(f"The coordinates for the transcript structure are given below from the transcriptome assembly")
     write_gff.write("\n")
-    write_gff.write(f"{names} \t{start} \t{end} \t{strand}")
+    write_gff.write(f"{names_draw} \t{start} \t{end} \t{strand}")
     write_gff.write("\n")
     write_gff.write(f"the formatted tuples for the coordinates are:")
     write_gff.write(f"{start_end_strand}")
