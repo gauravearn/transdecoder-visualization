@@ -1,13 +1,6 @@
 import os
 import arguably 
-import pyprofilers as pp
 import pandas as pd
-@pp.profile(sort_by='cumulative', out_lines=30) 
-@pp.profile_by_line(exit=1) 
-@pp.simple_timer(num=1)
-snap = CodeSnap()
-snap = CodeSnap(tracer="python") 
-snap.start()
 @arguably.Command
 def trinityAnnotateDraw(transcripts_path = FALSE)
 """
